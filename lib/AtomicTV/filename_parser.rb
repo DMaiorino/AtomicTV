@@ -9,11 +9,11 @@ module AtomicTV
       attr_reader :filename
       
       def human_message
-        "Invalid filename: #{filename} (filenames must be in the format: 'Series Name - S01E01')."
+        "Invalid filename: #{filename} (filenames must be in the format: 'Series Name - S01E01 Episode Name.mp4')."
       end
     end
     
-    FilenameFormat =  /\A(.*) - S(\d{2})E(\d{2})\.\w{3}\Z/
+    FilenameFormat =  /\A(.*) - S(\d{2})E(\d{2}).*\.\w{3}\Z/
     
     def self.parse(filename)
       if filename.to_s =~ FilenameFormat
