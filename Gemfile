@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 gem "plist", "3.1.0"
-gem "tvdb_party", "0.6.0"
+gem "tvdb_party", "0.8.1"
 
 group :development do
   gem "rspec"
