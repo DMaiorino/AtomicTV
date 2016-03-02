@@ -62,7 +62,6 @@ module AtomicTV
         'album' => metadata.album,
         'genre' => metadata.genre,
         'description' => metadata.description,
-        'longdesc' => metadata.long_description,
         'TVNetwork' => metadata.tv_network,
         'TVShowName' => metadata.tv_show_name,
         'TVEpisode' => metadata.tv_episode,
